@@ -107,7 +107,7 @@ def load_engine():
     logger.info(f"System running on: {device}")
     
     try:
-        model, preprocess = clip.load("ViT-B/32", device=device)
+        model, preprocess = clip.load("ViT-L/14", device=device)
         
         s_prompts = [f"a {s} style artwork" for s in STYLES]
         c_prompts = [f"dominant color is {c}" for c in COLORS]
@@ -290,4 +290,5 @@ elif not uploaded_files:
         2.  **Tối ưu hóa** quy trình làm nội dung.
         3.  **Xuất Excel** nhanh chóng.
         """)
+
 requirements như nào
